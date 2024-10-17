@@ -95,7 +95,7 @@ const Serv = () => {
         <div className=" mt-[2rem]   gap-3 sm:gap-[2rem] sm:grid-cols-2 grid grid-cols-1 w-full   ">
           <img
             src={nextDay}
-            className=" mx-auto w-[95%] sm:order-1 rounded-2xl shadow-lg sm:h-[500px] h-[300px]   "
+            className=" object-cover mx-auto w-[95%] sm:order-1 rounded-2xl shadow-lg sm:h-[500px] h-[300px]   "
             alt=""
           />
 
