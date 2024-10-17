@@ -19,8 +19,8 @@ const Serv = () => {
       </motion.p>
 
       <motion.section
-       whileInView={{ y: [80, 0], opacity: [0, 1] }}
-       transition={{ duration: 0.5, delay: 0.1 }}
+        whileInView={{ y: [80, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.5, delay: 0.1 }}
         className={`   w-full  gap-4 flex flex-col  py-[3rem]   pb-[4rem]  ${styles.paddingX}`}
       >
         <div className="gap-3 sm:gap-[2rem] sm:grid-cols-2 grid grid-cols-1 w-full   ">
@@ -54,8 +54,8 @@ const Serv = () => {
 
       {/* Phase "2" */}
       <motion.section
-       whileInView={{ y: [80, 0], opacity: [0, 1] }}
-       transition={{ duration: 0.5, delay: 0.3 }}
+        whileInView={{ y: [80, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.5, delay: 0.3 }}
         className={` bg-[#dddddd]  py-[3rem] w-full  gap-4 flex flex-col    pb-[4rem]  ${styles.paddingX}`}
       >
         <div className=" mt-[2rem]   gap-3 sm:gap-[2rem] sm:grid-cols-2 grid grid-cols-1 w-full   ">
@@ -88,8 +88,8 @@ const Serv = () => {
 
       {/* Phase "3" */}
       <motion.section
-      whileInView={{ y: [80, 0], opacity: [0, 1] }}
-      transition={{ duration: 0.5, delay: 0.5 }}
+        whileInView={{ y: [80, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.5, delay: 0.5 }}
         className={`  py-[3rem] w-full  gap-4 flex flex-col    pb-[4rem]  ${styles.paddingX}`}
       >
         <div className=" mt-[2rem]   gap-3 sm:gap-[2rem] sm:grid-cols-2 grid grid-cols-1 w-full   ">
@@ -103,7 +103,7 @@ const Serv = () => {
             <span className=" sm:text-3xl font-extrabold my-3 text-xl">
               Overnight Delivery
             </span>
-           LOWKEY logistics is always available whenever you need any parcel or
+            LOWKEY logistics is always available whenever you need any parcel or
             shipment to be delivered urgently overnight. Our overnight courier
             service is a dedicated nationwide delivery service which is ready to
             respond to our customer’s rapid and critical needs to get a
@@ -123,14 +123,14 @@ const Serv = () => {
 
       {/* Phase "4" */}
       <motion.section
-      whileInView={{ y: [80, 0], opacity: [0, 1] }}
-      transition={{ duration: 0.5, delay: 0.7 }}
+        whileInView={{ y: [80, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.5, delay: 0.7 }}
         className={` bg-[#dddddd]  py-[3rem] w-full  gap-4 flex flex-col    pb-[4rem]  ${styles.paddingX}`}
       >
         <div className=" mt-[2rem]   gap-3 sm:gap-[2rem] sm:grid-cols-2 grid grid-cols-1 w-full   ">
           <img
             src={deliveryImg}
-            className=" mx-auto w-[95%] sm:order-2 rounded-2xl shadow-lg sm:h-[500px] h-[300px]   "
+            className=" object-cover mx-auto w-[95%] sm:order-2 rounded-2xl shadow-lg sm:h-[500px] h-[300px]   "
             alt=""
           />
 
@@ -154,8 +154,8 @@ const Serv = () => {
           </p>
         </div>
       </motion.section>
-      <Soc/>
-      <Footer/>
+      <Soc />
+      <Footer />
     </>
   );
 };
