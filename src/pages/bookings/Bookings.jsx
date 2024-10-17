@@ -162,8 +162,6 @@ const Bookings = () => {
       <section
         className={`pt-[0rem]  w-full justify-center it ${styles.paddingX}`}
       >
-       
-
         <motion.p
           initial={{ y: "-11vh" }}
           animate={{ y: 0 }}
@@ -180,122 +178,127 @@ const Bookings = () => {
             <span className="text-red-500 font-bold">*</span> are required
           </p>
 
-          <form className="flex md:flex-row  md:justify-between md:gap-[rem]  w-full flex-col gap-1" onSubmit={handleSubmit}>
+          <form
+            className="flex md:flex-row  md:justify-between md:gap-[rem]  w-full flex-col gap-1"
+            onSubmit={handleSubmit}
+          >
             {/* Phase 1 */}
-            <div className=" flex  flex-col md:w-[45%] " >
-            <label className=" mt-0 font-bold" htmlFor="name">
-              Name <span className="text-red-500 font-bold">*</span>
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              className="w-full rounded-2xl focus:border-[lime] outline-none border-[1px] p-2 border-slate-500 mt-1"
-              placeholder="e.g: Lowkey Dev"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={formInputs.name}
-            />
-            {error.name && (
-              <p className="flex text-xs text-red-500">
-                This is a required field
-              </p>
-            )}
-            <label className="font-bold" htmlFor="email">
-              Email <span className="text-red-500 font-bold">*</span>
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              className="w-full rounded-2xl focus:border-[lime] outline-none border-[1px] p-2 border-slate-500 mt-1"
-              placeholder="e.g: example@example.com"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={formInputs.email}
-            />
-            {error.email && (
-              <p className="flex text-xs text-red-500">
-                This is a required field
-              </p>
-            )}
-            <label className="font-bold" htmlFor="collectionAddress">
-              Collection Address{" "}
-              <span className="text-red-500 font-bold">*</span>
-            </label>
-            <input
-              type="text"
-              id="collectionAddress"
-              name="collectionAddress"
-              className="w-full rounded-2xl focus:border-[lime] outline-none border-[1px] p-2 border-slate-500 mt-1"
-              placeholder="e.g: 123 Main St"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={formInputs.collectionAddress}
-            />
-            {error.collectionAddress && (
-              <p className="flex text-xs text-red-500">
-                This is a required field
-              </p>
-            )}
-            <label className="font-bold" htmlFor="collectionDate">
-              Collection Date <span className="text-red-500 font-bold">*</span>
-            </label>
-            <input
-              type="date"
-              id="collectionDate"
-              name="collectionDate"
-              className="w-full rounded-2xl focus:border-[lime] outline-none border-[1px] p-2 border-slate-500 mt-1"
-              placeholder="Date"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={formInputs.collectionDate}
-            />
-            {error.collectionDate && (
-              <p className="flex text-xs text-red-500">
-                This is a required field
-              </p>
-            )}
-            <label className="font-bold" htmlFor="deliveryAddress">
-              Delivery Address <span className="text-red-500 font-bold">*</span>
-            </label>
-            <input
-              type="text"
-              id="deliveryAddress"
-              name="deliveryAddress"
-              className="w-full rounded-2xl focus:border-[lime] outline-none border-[1px] p-2 border-slate-500 mt-1"
-              placeholder="e.g: 456 Elm St"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={formInputs.deliveryAddress}
-            />
-            {error.deliveryAddress && (
-              <p className="flex text-xs text-red-500">
-                This is a required field
-              </p>
-            )}
-            <label className="font-bold" htmlFor="deliveryDate">
-              Delivery Date <span className="text-red-500 font-bold">*</span>
-            </label>
-            <input
-              type="date"
-              id="deliveryDate"
-              name="deliveryDate"
-              className="w-full rounded-2xl focus:border-[lime] outline-none border-[1px] p-2 border-slate-500 mt-1"
-              placeholder="Date"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={formInputs.deliveryDate}
-            />
-            {error.deliveryDate && (
-              <p className="flex text-xs text-red-500">
-                This is a required field
-              </p>
-            )}
+            <div className=" flex  flex-col md:w-[45%] ">
+              <label className=" mt-0 font-bold" htmlFor="name">
+                Name <span className="text-red-500 font-bold">*</span>
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                className="w-full rounded-2xl focus:border-[lime] outline-none border-[1px] p-2 border-slate-500 mt-1"
+                placeholder="e.g: Lowkey Dev"
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={formInputs.name}
+              />
+              {error.name && (
+                <p className="flex text-xs text-red-500">
+                  This is a required field
+                </p>
+              )}
+              <label className="font-bold" htmlFor="email">
+                Email <span className="text-red-500 font-bold">*</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                className="w-full rounded-2xl focus:border-[lime] outline-none border-[1px] p-2 border-slate-500 mt-1"
+                placeholder="e.g: example@example.com"
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={formInputs.email}
+              />
+              {error.email && (
+                <p className="flex text-xs text-red-500">
+                  This is a required field
+                </p>
+              )}
+              <label className="font-bold" htmlFor="collectionAddress">
+                Collection Address{" "}
+                <span className="text-red-500 font-bold">*</span>
+              </label>
+              <input
+                type="text"
+                id="collectionAddress"
+                name="collectionAddress"
+                className="w-full rounded-2xl focus:border-[lime] outline-none border-[1px] p-2 border-slate-500 mt-1"
+                placeholder="e.g: 123 Main St"
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={formInputs.collectionAddress}
+              />
+              {error.collectionAddress && (
+                <p className="flex text-xs text-red-500">
+                  This is a required field
+                </p>
+              )}
+              <label className="font-bold" htmlFor="collectionDate">
+                Collection Date{" "}
+                <span className="text-red-500 font-bold">*</span>
+              </label>
+              <input
+                type="date"
+                id="collectionDate"
+                name="collectionDate"
+                className="w-full rounded-2xl focus:border-[lime] outline-none border-[1px] p-2 border-slate-500 mt-1"
+                placeholder="Date"
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={formInputs.collectionDate}
+              />
+              {error.collectionDate && (
+                <p className="flex text-xs text-red-500">
+                  This is a required field
+                </p>
+              )}
+              <label className="font-bold" htmlFor="deliveryAddress">
+                Delivery Address{" "}
+                <span className="text-red-500 font-bold">*</span>
+              </label>
+              <input
+                type="text"
+                id="deliveryAddress"
+                name="deliveryAddress"
+                className="w-full rounded-2xl focus:border-[lime] outline-none border-[1px] p-2 border-slate-500 mt-1"
+                placeholder="e.g: 456 Elm St"
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={formInputs.deliveryAddress}
+              />
+              {error.deliveryAddress && (
+                <p className="flex text-xs text-red-500">
+                  This is a required field
+                </p>
+              )}
+              <label className="font-bold" htmlFor="deliveryDate">
+                Delivery Date <span className="text-red-500 font-bold">*</span>
+              </label>
+              <input
+                type="date"
+                id="deliveryDate"
+                name="deliveryDate"
+                className="w-full rounded-2xl focus:border-[lime] outline-none border-[1px] p-2 border-slate-500 mt-1"
+                placeholder="Date"
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={formInputs.deliveryDate}
+              />
+              {error.deliveryDate && (
+                <p className="flex text-xs text-red-500">
+                  This is a required field
+                </p>
+              )}
             </div>
 
             {/* Phase 2 */}
-            <div className=" flex flex-col md:w-[40%]   " >
+            <div className=" flex flex-col md:w-[40%]   ">
               <label className="font-bold " htmlFor="selectedVehicle">
                 Select Vehicle <span className="text-red-500 font-bold">*</span>
               </label>
@@ -310,14 +313,13 @@ const Bookings = () => {
                 <option value="Medium Size Van">Medium Size Van</option>
                 <option value="Curtain Side Luton">Curtain Side Luton</option>
                 <option value="Luton Van">Luton Van</option>
-                
               </select>
-              <div className=" md:h-[300px] h-[320px]  mb-6  flex flex-col mt-3 justify-between p-[2rem]  items-center selectV">
+              <div className=" md:h-[300px] h-max-[320px]  mb-6  flex flex-col mt-3 justify-between p-[2rem]  items-center selectV">
                 <motion.img
                   initial={{ y: "-10vh" }}
                   animate={{ y: 0 }}
                   src={getVehicleImage()}
-                  className=" md:w-[300px] sm:h-[300px] w-full sm:w-[300px] "
+                  className=" object-cover  md:w-[300px] sm:h-[300px] w-full sm:w-[300px] "
                   alt={selectedVehicle}
                 />
                 <motion.p
@@ -335,7 +337,7 @@ const Bookings = () => {
               <textarea
                 id="description"
                 name="description"
-                className="w-full rounded-2xl focus:border-[lime] h-[120px] outline-none border-[1px] p-2 border-slate-500 mt-1"
+                className="w-full rounded-2xl resize-none focus:border-[lime] h-[120px] outline-none border-[1px] p-2 border-slate-500 mt-1"
                 placeholder="e.g: Your message here"
                 onChange={handleChange}
                 onBlur={handleBlur}
@@ -363,7 +365,7 @@ const Bookings = () => {
         </section>
       </section>
       <Footer />
-      <Soc/>
+      <Soc />
     </>
   );
 };
